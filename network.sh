@@ -22,21 +22,21 @@ gone-cli bridge bridge2
 gone-cli bridge bridge3
 gone-cli router router1
 
-gone-cli connect node gone-1 bridge1
-gone-cli connect node gone-2 bridge1
-gone-cli connect node gone-3 bridge1
-gone-cli connect node gone-4 bridge1
-gone-cli connect node gone-5 bridge1
+gone-cli connect -n gone-1 bridge1
+gone-cli connect -n gone-2 bridge1
+gone-cli connect -n gone-3 bridge1
+gone-cli connect -n gone-4 bridge1
+gone-cli connect -n gone-5 bridge1
 
-gone-cli connect node gone-6 bridge2
-gone-cli connect node gone-7 bridge2
-gone-cli connect node gone-8 bridge2
+gone-cli connect -n gone-6 bridge2
+gone-cli connect -n gone-7 bridge2
+gone-cli connect -n gone-8 bridge2
 
-gone-cli connect node gone-9 bridge3
-gone-cli connect node gone-10 bridge3
+gone-cli connect -n gone-9 bridge3
+gone-cli connect -n gone-10 bridge3
 
-gone-cli connect bridge bridge1 router1
-gone-cli connect bridge bridge2 router1
-gone-cli connect bridge bridge3 router1
+gone-cli connect -b bridge1 router1
+gone-cli connect -b bridge2 router1
+gone-cli connect -b bridge3 router1
 
 gone-cli unpause -a
